@@ -5,7 +5,8 @@ import Layout from './components/Navbar/Layout';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Experience from './Pages/Experience';
-import Projects from "./Pages/Project"
+import Projects from "./Pages/Project";
+import Contact from './Pages/Contact';
 
 // import Experience from './Experience';
 // import Contact from './Contact';
@@ -46,6 +47,15 @@ const App = () => {
             </Layout>
           }
         />
+           <Route
+          path="/contact"
+          element={
+            <Layout>
+              <Contact />
+            </Layout>
+          }
+        />
+
       </Routes>
     </Router>
   );

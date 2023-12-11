@@ -4,7 +4,7 @@ import Profile2 from "../Assessts/profile2.jpg";
 const About = () => {
   return (
     <div className='flex flex-col h-screen items-center justify-center bg-opacity-70 backdrop-filter backdrop-blur-md '>
-      <div className='w-800 h-800 p-8 flex justify-between gap-10 backdrop-filter backdrop-blur-md border-4  border-pink-600 shadow-lg' style={{backgroundColor:"#f1e8f8"}}>
+      <div className=' p-8 flex justify-between gap-10 backdrop-filter backdrop-blur-md border-4  border-pink-600 shadow-lg' style={{backgroundColor:"#f1e8f8"}}>
         <div className='flex items-center justify-center'>
           <img src={Profile2} alt="Profile" className='w-64 h-64  object-cover ' />
         </div>
