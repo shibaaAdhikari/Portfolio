@@ -1,0 +1,48 @@
+/* Layout.css */
+.container {
+    position: relative;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    background-color: #e2dddd;
+    border-radius: 5px;
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 6px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .nav-toggle:checked + .navbar {
+    transform: translateX(0);
+  }
+  
+  .nav-toggle:checked + .navbar + .content {
+    transform: translateX(240px);
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .nav-toggle-label {
+      display: block;
+    }
+  
+    .navbar {
+      transform: translateX(-240px);
+    }
+  
+    .content {
+      transform: translateX(0);
+    }
+  }
+  
